@@ -1,0 +1,122 @@
+# HTML
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design House</title>
+    <link rel="stylesheet" href="style.css"> <!--얘가 연결되어야 css,각종 파일연결가능-->
+
+
+</head>
+<div class="container">
+    <div class="header">
+        <h1><a href="#">DESIGN</a></h1>
+        <div class="nav">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">BEDROOM</a></li>
+                <li><a href="#">DINING</a></li>
+                <li><a href="#">KITCHEN</a></li>
+                <li><a href="#">BACKYARD</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="hero">
+        <h2>DESIGN YOUR HOUSE</h2>
+        <p>Subscribe Easy Youtube Channel to watch more videos,press t he bell icon to get latest updates.</p>
+        <button>more videos</button>
+    </div>
+</div>
+<body>
+    
+</body>
+</html>
+
+#CSS
+
+@font-face {
+    font-family: abster;
+    src: url(font/abster-webfont.woff) format('woff')
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background: linear-Gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(images/room.jpg)
+    /* background에 보통 이렇게 하는 이유는 그라데이션을 하기위함, 3가지면 3가지, 4가지면 4가지 가능 */
+
+}
+
+.container .header{
+    width: 80%;
+    height: 80px;
+    margin:0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .header h1 a{
+    text-decoration: none;
+    color:white;
+    font-family: abster; /* 얘는 글씨체가 이뻐지는것 */
+}
+
+.container .nav ul li{
+    display: inline-block; 
+    margin:0 10px;
+    
+}
+
+.container .nav ul li a{
+    text-decoration: none; /* 얘는 글씨가 하얀색인것 */
+    color:white;
+
+}
+
+.container .nav ul li a:hover{ /* css 전용 주석*/ /*얘가 이제 글씨에 대면 색으로 변하는것*/
+    color:#1fdfdf;
+}
+
+.container .hero{
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    color:white;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container .hero h2{
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.container .hero p{
+    font-size: 22px;
+}
+
+.container .hero button{
+    background: none;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 20px;
+    margin-top:30px;
+    outline: none;
+    cursor: pointer;
+}
+
+.container .hero button: hover{
+    background-color: darkslategray; 
+}
+
+복사하셔서 보시면됩니다.
