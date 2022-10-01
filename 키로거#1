@@ -1,0 +1,11 @@
+from pynput.keyboard import Key, Listener
+
+
+def on_press(key):
+    print(str(key))
+
+
+with Listener(on_press) as l:
+    l.join()
+    
+    -> vs code 환경에서 터미널로 키면 내가 누른자판이 문자열 형태로 나옵니다.
